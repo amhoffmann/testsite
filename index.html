@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.77">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!--</p>
+<p class="p1">// v0 by Vercel.</p>
+<p class="p1">// https://v0.dev/t/tExjz1fpDiJ</p>
+<p class="p1">--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;:root{--background:210 100% 6%;--foreground:180 100% 90%;--primary:200 100% 28%;--primary-foreground:180 100% 90%;--secondary:203 23% 30%;--secondary-foreground:180 100% 90%;--accent:198 70% 50%;--accent-foreground:185 10% 13%;--destructive:0 98% 44%;--destructive-foreground:0 0% 100%;--muted:200 50% 30%;--muted-foreground:180 100% 90%;--card:210 100% 12%;--card-foreground:180 100% 90%;--popover:210 100% 15%;--popover-foreground:180 100% 90%;--border:210 50% 40%;--input:210 50% 40%;--ring:180 100% 90%;--chart-1:200 100% 28%;--chart-2:201 99% 25%;--chart-3:203 98% 22%;--chart-4:204 100% 18%;--chart-5:206 100% 15%;--radius:0rem;}img[src="/placeholder.svg"],img[src="/placeholder-user.jpg"]{filter:sepia(.3) hue-rotate(-150deg) saturate(.5) opacity(0.5) invert(.9)}&lt;/style&gt;</p>
+<p class="p1">&lt;style&gt;h1, h2, h3, h4, h5, h6 { font-family: 'Bricolage Grotesque', sans-serif; --font-sans-serif: 'Bricolage Grotesque'; }</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;style&gt;body { font-family: 'Space Mono', monospace; --font-monospace: 'Space Mono'; }</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;div class="flex flex-col min-h-[100dvh]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="bg-primary text-primary-foreground px-4 lg:px-6 h-14 flex items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="flex items-center justify-center" href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">        </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>class="h-6 w-6"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="sr-only"&gt;Ally Hoffmann Learning Support&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav class="ml-auto flex gap-4 sm:gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Services</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>About</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Testimonials</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="text-sm font-medium hover:underline underline-offset-4" href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Contact</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="flex-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-primary text-primary-foreground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container px-4 md:px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex flex-col justify-center space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Personalized Learning Support</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;p class="max-w-[600px] text-primary-foreground/80 md:text-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Ally Hoffmann offers tailored tutoring, coaching, and workshops to help neurodivergent students and</p>
+<p class="p1"><span class="Apple-converted-space">                </span>adults build confidence, improve executive functioning, and achieve their learning goals.</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a</p>
+<p class="p1"><span class="Apple-converted-space">              </span>class="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>href="#"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>rel="ugc"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Book a Session</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">            </span>src="/placeholder.svg"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width="550"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height="550"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alt="Hero"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about" class="w-full py-12 md:py-24 lg:py-32"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container px-4 md:px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm"&gt;About Ally&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Decade of Experience in Neurodivergent Learning</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Ally Hoffmann has over 10 years of experience working with neurodivergent students and adults, helping</p>
+<p class="p1"><span class="Apple-converted-space">              </span>them build confidence, improve executive functioning, and achieve their learning goals. She</p>
+<p class="p1"><span class="Apple-converted-space">              </span>specializes in tailored tutoring, coaching, and therapeutic modalities to support unique learning</p>
+<p class="p1"><span class="Apple-converted-space">              </span>styles.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex flex-col justify-center space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-8 h-8 text-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;path d="M22 10v6"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;h3 class="text-xl font-bold"&gt;Specialized Expertise&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;p class="text-muted-foreground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Ally has extensive training in neurodivergent learning styles, executive functioning, and</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>therapeutic modalities.</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-8 h-8 text-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1"&gt;&lt;/rect&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;path d="m9 14 2 2 4-4"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;h3 class="text-xl font-bold"&gt;Personalized Approach&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;p class="text-muted-foreground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Each student or client receives a tailored plan to address their unique needs and goals.</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-8 h-8 text-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;h3 class="text-xl font-bold"&gt;Confidence-Building&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;p class="text-muted-foreground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Ally's sessions focus on developing self-awareness, self-advocacy, and a growth mindset.</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="services" class="w-full py-12 md:py-24 lg:py-32 bg-muted"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container px-4 md:px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center justify-center space-y-4 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm"&gt;Services&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold tracking-tighter sm:text-5xl"&gt;Tailored Support for Your Needs&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Ally offers a range of personalized services to help neurodivergent individuals achieve their learning</p>
+<p class="p1"><span class="Apple-converted-space">              </span>and personal goals.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-2 lg:gap-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex flex-col justify-center space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold"&gt;Tutoring&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-muted-foreground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>One-on-one tutoring sessions tailored to the student's unique learning style and needs, covering a</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>wide range of academic subjects.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold"&gt;Coaching&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-muted-foreground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Personalized coaching to develop executive functioning skills, improve time management, and build</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>confidence.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-xl font-bold"&gt;Workshops&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-muted-foreground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Interactive workshops on topics like study skills, self-advocacy, and navigating the education</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>system.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">            </span>src="/placeholder.svg"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width="550"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height="310"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alt="Services"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="testimonials" class="w-full py-12 md:py-24 lg:py-32"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container px-4 md:px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center justify-center space-y-4 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm"&gt;Testimonials&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold tracking-tighter sm:text-5xl"&gt;Hear from Our Clients&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Our clients have experienced life-changing results with Ally's personalized support.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid gap-8 py-12 lg:grid-cols-2 lg:gap-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="grid gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="relative flex shrink-0 overflow-hidden rounded-full border w-11 h-11"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img class="aspect-square h-full w-full" alt="@username" src="/placeholder-user.jpg" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="font-semibold"&gt;Scott&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-sm text-muted-foreground"&gt;Bernard Hill, California&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-2 text-xs font-semibold"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="flex items-center gap-px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5 fill-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5 fill-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5 fill-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5 fill-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>· &lt;span&gt;1 week ago&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Ally's tutoring has been life-changing for my child. She has a deep understanding of neurodivergent</p>
+<p class="p1"><span class="Apple-converted-space">              </span>learning styles and has helped build my child's confidence and academic skills.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="grid gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="relative flex shrink-0 overflow-hidden rounded-full border w-11 h-11"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img class="aspect-square h-full w-full" alt="@username" src="/placeholder-user.jpg" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="font-semibold"&gt;Julie&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-sm text-muted-foreground"&gt;Miami, California&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-2 text-xs font-semibold"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="flex items-center gap-px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5 fill-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5 fill-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5 fill-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5 fill-primary"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>xmlns="http://www.w3.org/2000/svg"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>width="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>height="24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>viewBox="0 0 24 24"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>fill="none"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke="currentColor"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-width="2"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linecap="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>stroke-linejoin="round"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="w-2.5 h-2.5"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>· &lt;span&gt;1 week ago&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Ally's coaching has been instrumental in helping me develop better time management and executive</p>
+<p class="p1"><span class="Apple-converted-space">              </span>functioning skills. I'm so grateful for her support and expertise.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" class="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container px-4 md:px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm"&gt;Contact&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Let's Work Together</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-[600px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Ready to take the next step? Book a consultation with Ally to discuss your learning needs and goals.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex flex-col justify-center space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;form class="grid gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="grid gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>for="name"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Name</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>id="name"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>placeholder="Your name"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>required=""</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>type="text"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="grid gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>for="email"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Email</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>id="email"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>placeholder="you@example.com"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>required=""</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>type="email"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="grid gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>for="message"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Message</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;textarea</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>id="message"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>placeholder="How can I help you?"</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>required=""</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;button</p>
+<p class="p1"><span class="Apple-converted-space">                </span>class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>type="submit"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Book a Session</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="bg-muted p-6 md:py-12 w-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid gap-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="font-semibold"&gt;Company&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>About Us</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Our Team</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Careers</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>News</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid gap-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="font-semibold"&gt;Services&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Tutoring</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Coaching</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" rel="ugc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Workshops</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+</body>
+</html>
